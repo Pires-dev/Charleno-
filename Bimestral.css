@@ -1,0 +1,471 @@
+@keyframes pulsar {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+@keyframes slide-em {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.container,
+.container-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+.Cabecario .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+.header-navegacao ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.header-navegacao a {
+  text-decoration: none;
+  color: #555;
+}
+.header-navegacao a:hover {
+  color: #000;
+}
+.header-acoes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-acoes a {
+  text-decoration: none;
+  color: #555;
+}
+.btn-SignUp {
+  background: #fca311;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+.btn-SignUp:hover {
+  background: #e59408;
+}
+.btn-SignUp .signup-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+.idioma {
+  padding: 0.3rem;
+}
+
+
+.container-principal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+.primeiraFrase {
+  color: #fca311;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.titulo-principal {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.texto-principal {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+.btn-amarelo {
+  background: #fca311;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-amarelo:hover {
+  background-color: #e59408;
+  transform: scale(1.05);
+}
+.btn-play {
+  text-decoration: none;
+  color: #333;
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+.icon-play {
+  
+  margin-right: 0.5rem;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/260/260446.png");
+  background-size: cover;
+}
+
+.btn-play:hover {
+  color: #fca311;
+}
+.img-principal img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+.servicos {
+  padding: 3rem 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+.servicos h6 {
+  color: #fca311;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.servicos h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.servico-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+.servico-item {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slide-em 0.6s ease forwards;
+  opacity: 0;
+}
+.servico-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.icon-antena,
+.icon-aviao,
+.icon-mic,
+.icon-eng {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+.servico-item:hover .icon-antena,
+.servico-item:hover .icon-aviao,
+.servico-item:hover .icon-mic,
+.servico-item:hover .icon-eng {
+  transform: scale(1.1);
+}
+.icon-antena {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/2164/2164731.png");
+}
+.icon-aviao {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/1048/1048349.png");
+}
+.icon-mic {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/4632/4632820.png");
+}
+.icon-eng {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/6528/6528734.png");
+}
+
+.icon-envio {
+ background-image: url("https://cdn-icons-png.flaticon.com/128/4632/4632820.png");
+}
+
+
+.top-destinations {
+  padding: 30px 20px;
+ 
+}
+
+.L {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-destinations h6 {
+  color: #fca311;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.top-destinations h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.destination-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+.destination-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+.destination-card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.destination-card h3 {
+  margin: 1rem 1rem 0.5rem;
+  text-align: left;
+}
+.destination-card .icon-envio1::before {
+  margin-right: 0.5rem;
+}
+.destination-card p:not(.preco) {
+  margin: 0 1rem 0.25rem;
+  color: #555;
+}
+.preco {
+  align-self: flex-end;
+  margin: 0 1rem 1rem;
+  font-weight: bold;
+}
+
+.comoReservar {
+   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #2c2c2c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.comoReservar h5 {
+  color: #606080;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.comoReservar h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f1f3e;
+  max-width: 400px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.steps-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 400px;
+}
+
+.steps-lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.steps-lista h3 {
+  font-size: 18px;
+  color: #1f1f3e;
+  margin-bottom: 5px;
+}
+  .steps-lista p {
+  font-size: 14px;
+  color: #666;
+  max-width: 300px;
+}
+
+  
+.icon-loc, .icon-nat, .icon-carro {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-size: cover;
+}
+
+.icon-loc {
+  background-color: #F6D85F;
+  background-image: url('https://cdn-icons-png.flaticon.com/128/684/684908.png');
+}
+
+.icon-nat {
+  background-color: #F76543;
+  background-image: url('https://cdn-icons-png.flaticon.com/128/3416/3416075.png');
+}
+
+.icon-carro {
+  background-color: #3EC3C1;
+  background-image: url('https://cdn-icons-png.flaticon.com/128/854/854866.png');
+}
+
+
+
+/* Card da viagem */
+.reserva-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.mulher {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.trip-details {
+  padding: 20px;
+}
+
+.trip-details h4 {
+  font-size: 20px;
+  color: #1f1f3e;
+}
+
+.trip-details p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Ícones internos */
+.icon-folha, .icon-mapa, .icon-envio1, .icon-predio, .icon-coracao {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.icon-folha {
+  background-image: url('https://cdn-icons-png.flaticon.com/128/4240/4240629.png');
+}
+.icon-mapa {
+  background-image: url('https://cdn-icons-png.flaticon.com/128/535/535239.png');
+}
+.icon-envio1 {
+  background-image: url('https://cdn-icons-png.flaticon.com/128/10262/10262882.png');
+}
+.icon-predio {
+  background-image: url('https://cdn-icons-png.flaticon.com/128/684/684908.png');
+}
+.icon-coracao {
+  background-image: url('https://cdn-icons-png.flaticon.com/128/833/833472.png');
+  float: right;
+}
+
+/* Cartão secundário de progresso */
+.reserva-card::after {
+  content: '';
+  display: block;
+  margin-top: 20px;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  width: 220px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.reserva-card::after {
+  content: '🕘 Ongoing\nTrip to Rome\n40% completed';
+  white-space: pre-line;
+  font-size: 14px;
+  color: #1f1f3e;
+}
+
+.reserva-card::after:after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 40%;
+  background: #6c5ce7;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+  .container-principal {
+    flex-direction: column;
+  }
+  .hero-text,
+  .img-principal {
+    max-width: 100%;
+  }
+  .destination-lista {
+    flex-direction: column;
+  }
+}
